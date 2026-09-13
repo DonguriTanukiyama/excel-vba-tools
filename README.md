@@ -19,11 +19,12 @@
 
 ## Excel で試す
 
-**`.bas` は git で取り出す**。リポジトリの中では UTF-8 で持ち（GitHub の画面で読めるように）、
-取り出すときに `.gitattributes` の設定で Shift-JIS・CRLF に変わる。VBA エディタは Shift-JIS しか読めない。
-GitHub の画面から 1 ファイルずつ保存した `.bas` は UTF-8 のままなので、取り込むと日本語が化ける。
+**リポジトリごと取り出す**（GitHub の「Code」→「Download ZIP」か、`git clone`）。
+`.bas` はリポジトリの中では UTF-8 で持ち（GitHub の画面で読めるように）、取り出すと Shift-JIS・CRLF になる。
+VBA エディタは Shift-JIS しか読めない。ZIP でも git でも Shift-JIS になることを確かめた。
+**GitHub の画面から 1 ファイルずつ保存した `.bas` は UTF-8 のまま**なので、取り込むと日本語が化ける。
 
-1. `git clone` でこのリポジトリを取り出す。使うのは `inspection/` の次の 4 つ
+1. ZIP を展開する（または `git clone`）。使うのは `inspection/` の次の 4 つ
    - `GenbaNorm.bas` と `GenbaReport.bas`（マクロの本体。報告書のほうは、点検表を読むのに `GenbaNorm.bas` を使う）
    - `点検記録_2026-09.xlsx`（崩れた点検表の見本）
    - `点検報告書_ひな形.xlsx`（報告書の見た目）

@@ -1,0 +1,13 @@
+# 突き合わせの出力と報告書（VBA と oracle.py で作り直せる）
+*_VBA.csv
+*_正解.csv
+*_点検報告書/
+
+# 実行環境
+__pycache__/
+*.pyc
+.venv/
+
+# Windows / Google Drive が置くもの
+desktop.ini
+Thumbs.db
